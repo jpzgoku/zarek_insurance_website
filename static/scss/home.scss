@@ -1,0 +1,155 @@
+@import 'variables';
+
+.logo {
+    margin: 60px auto;
+    max-width: 960px;
+    text-align: center;
+
+    @media (max-width: $xs) {
+        margin: 16px auto;
+    }
+
+    img {
+        margin: auto;
+        max-width: 100%;
+        max-height: 90%;
+
+        @media (max-width: $xs) {
+            max-width: 100%;
+        }
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 60px;
+        margin: 70px 0;
+        text-align: center;
+
+        @media (max-width: $xs) {
+            font-size: 32px;
+        }
+    }
+}
+
+.insurance-rates {
+    background-color: $silver;
+    padding: 60px 0;
+
+    h3 {
+        font-size: 24px;
+        line-height: 40px;
+        margin: 40px 40px 60px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    div {
+
+        @media (max-width: $xs) {
+            text-align: center;
+        }
+    }
+
+    .store-img {
+        text-align: right;
+
+        @media (max-width: $xs) {
+            text-align: center;
+        }
+
+        img {
+            margin: 0 40px;
+
+            @media (max-width: $xs) {
+                margin: 16px auto;
+            }
+        }
+    }
+
+
+
+    li {
+        padding: 4px 0;
+    }
+}
+
+.carriers {
+
+    margin: 40px 0 24px;
+
+    h3 {
+        font-size: 32px;
+        text-align: center;
+
+        @media (max-width: $sm) {
+            font-size: 24px;
+        }
+    }
+
+    .marquee {
+        overflow: hidden;
+        height: 120px;
+        width: 100%;
+
+        @media (max-width: $sm) {
+            max-height: 70px;
+        }
+
+        img {
+            margin: 0 24px;
+            vertical-align: middle;
+            max-height: 80px;
+
+            @media (max-width: $sm) {
+                max-height: 50px;
+            }
+        }
+    }
+}
+
+
+//
+// .carriers {
+//     text-align: center;
+//
+//     ul {
+//         list-style-type: none;
+//
+//         li {
+//             display: inline-block;
+//             padding: 4px 12px;
+//
+//             img {
+//                 max-height: 50px;
+//
+//                 &.erie {
+//                     max-height: 117px;
+//                 }
+//
+//                 &.west-bend {
+//                     max-height: 100px;
+//                 }
+//
+//                 &.emc {
+//                     max-height: 82px;
+//                 }
+//
+//                 &.auto-owners {
+//                     max-height: 38px;
+//                     vertical-align: super;
+//                 }
+//
+//                 &.imt {
+//                     max-height: 60px;
+//                 }
+//
+//                 &.progressive {
+//                     max-height: 29px;
+//                     vertical-align: super;
+//                 }
+//             }
+//
+//         }
+//
+//     }
+// }

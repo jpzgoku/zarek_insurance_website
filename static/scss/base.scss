@@ -1,5 +1,31 @@
 @import 'variables';
 
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $light;
+
+    &:hover {
+        color: $silver;
+        text-decoration: none;
+    }
+}
+
+iframe {
+    width: 100%
+}
+
 header {
     background-color: $dark;
     color: $light;
@@ -38,20 +64,31 @@ header {
             padding: 0 16px;
         }
     }
+}
 
-    a {
-        text-decoration: none;
-        color: $light;
+footer {
+    background-color: $dark;
+    color: $silver;
+    padding: 60px 20px;
 
-        &:hover {
-            color: #e3e3e3;
-            text-decoration: none;
+    .footer-menu {
+        margin: 0 auto;
+        width: 50%;
+
+        @media (max-width: $sm) {
+            text-align: center;
+            width: 100%;
         }
     }
 
-    // .logo {
-    //     background: no-repeat url(../images/zarek_insurance_logo.png) 49% 0%;
-    //     height: 188.13px;
-    //     width: 152px;
-    // }
+    ul {
+        font-weight: 300;
+        list-style-type: none;
+        margin: 0 0 24px;
+
+        li {
+            margin: 8px 0;
+            padding: 8px 0;
+        }
+    }
 }

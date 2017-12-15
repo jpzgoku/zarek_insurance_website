@@ -1,0 +1,72 @@
+.logo {
+  margin: 60px auto;
+  max-width: 960px;
+  text-align: center; }
+  @media (max-width: 575px) {
+    .logo {
+      margin: 16px auto; } }
+  .logo img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 90%; }
+    @media (max-width: 575px) {
+      .logo img {
+        max-width: 100%; } }
+  .logo h1 {
+    font-size: 40px;
+    line-height: 60px;
+    margin: 70px 0;
+    text-align: center; }
+    @media (max-width: 575px) {
+      .logo h1 {
+        font-size: 32px; } }
+
+.insurance-rates {
+  background-color: #e3e3e3;
+  padding: 60px 0; }
+  .insurance-rates h3 {
+    font-size: 24px;
+    line-height: 40px;
+    margin: 40px 40px 60px;
+    text-transform: uppercase;
+    text-align: center; }
+  @media (max-width: 575px) {
+    .insurance-rates div {
+      text-align: center; } }
+  .insurance-rates .store-img {
+    text-align: right; }
+    @media (max-width: 575px) {
+      .insurance-rates .store-img {
+        text-align: center; } }
+    .insurance-rates .store-img img {
+      margin: 0 40px; }
+      @media (max-width: 575px) {
+        .insurance-rates .store-img img {
+          margin: 16px auto; } }
+  .insurance-rates li {
+    padding: 4px 0; }
+
+.carriers {
+  margin: 40px 0 24px; }
+  .carriers h3 {
+    font-size: 32px;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .carriers h3 {
+        font-size: 24px; } }
+  .carriers .marquee {
+    overflow: hidden;
+    height: 120px;
+    width: 100%; }
+    @media (max-width: 767px) {
+      .carriers .marquee {
+        max-height: 70px; } }
+    .carriers .marquee img {
+      margin: 0 24px;
+      vertical-align: middle;
+      max-height: 80px; }
+      @media (max-width: 767px) {
+        .carriers .marquee img {
+          max-height: 50px; } }
+
+/*# sourceMappingURL=home.css.map */
