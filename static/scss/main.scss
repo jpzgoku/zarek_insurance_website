@@ -1,0 +1,81 @@
+@import 'variables';
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 960px;
+
+    img {
+        margin: auto;
+        max-width: 100%;
+        max-height: 90%;
+
+        @media (max-width: $xs) {
+            max-width: 100%;
+        }
+    }
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+
+        @media (max-width: $xs) {
+            font-size: 32px;
+        }
+    }
+}
+
+.carriers {
+    text-align: center;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            padding: 4px 12px;
+
+            img {
+                max-height: 50px;
+
+                &.erie {
+                    max-height: 117px;
+                }
+
+                &.west-bend {
+                    max-height: 100px;
+                }
+
+                &.emc {
+                    max-height: 82px;
+                }
+
+                &.auto-owners {
+                    max-height: 38px;
+                    vertical-align: super;
+                }
+
+                &.imt {
+                    max-height: 60px;
+                }
+
+                &.progressive {
+                    max-height: 29px;
+                    vertical-align: super;
+                }
+            }
+
+        }
+
+    }
+}

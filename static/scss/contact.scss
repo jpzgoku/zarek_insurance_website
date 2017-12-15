@@ -1,0 +1,43 @@
+@import 'variables';
+
+.map-and-info {
+    margin: 0 auto;
+    max-width: 991px;
+    width: 100%
+}
+
+.map {
+    max-width: 600px;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+
+    @media (max-width: $md) {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.contact-info {
+    display: inline-block;
+    font-size: 18px;
+    overflow: hidden;
+    padding: 32px;
+    vertical-align: top;
+
+    @media (max-width: $md) {
+        display: block;
+        font-size: 16px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 16px 0;
+
+        li {
+            padding: 4px 0;
+        }
+    }
+}
