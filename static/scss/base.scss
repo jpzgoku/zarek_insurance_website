@@ -42,10 +42,28 @@ header {
     padding: 4px 32px;
 
     div {
-        margin: 8px 0;
+        margin: auto;
+
+        .dropdown-menu {
+            display: none;
+
+            @media (max-width: $xs) {
+                display: block;
+            }
+
+            i {
+                cursor: pointer;
+                font-size: 22px;
+                opacity: .8;
+                padding: 4px;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
 
         .header-menu {
-            margin: auto;
 
             @media (max-width: $xs) {
                 display: none;
@@ -54,12 +72,11 @@ header {
 
         .header-call-button {
             font-size: 25px;
-            margin: 0;
+            margin: 8px 0;
             text-align: right;
 
             @media (max-width: $xs) {
                 text-align: center;
-                width: 100%
             }
 
             a {
@@ -68,14 +85,52 @@ header {
                     border: 3px solid $maroon;
                     border-radius: 12px;
                     color: $light;
+                    cursor: pointer;
                     display: inline-block;
                     padding: 8px;
+                    text-align: center;
 
                     &:hover {
                         background-color: $maroon;
                         color: $dark;
-                        cursor: pointer;
                     }
+                }
+            }
+        }
+    }
+
+    .dropdown-list {
+        display: none;
+        position: absolute;
+        width: 85%;
+
+        @media (max-width: $xs) {
+            display: block;
+        }
+
+        ul {
+            display: none;
+            font-size: 30px;
+            text-align: center;
+            width: 100%;
+            z-index: 1;
+
+            li {
+                background-color: $dark;
+                border: 3px solid $lightSilver;
+                border-bottom: none;
+                color: $light;
+                cursor: pointer;
+                border-radius: 12px;
+                display: block;
+                padding: 24px 12px;
+
+                &:hover {
+                    color: $maroon;
+                }
+
+                a {
+                    display: none;
                 }
             }
         }
