@@ -44,41 +44,38 @@ header {
     div {
         margin: 8px 0;
 
-        div {
+        .header-menu {
+            margin: auto;
 
-            &:first-child {
-                margin: auto;
-
-                @media (max-width: $xs) {
-                    display: none;
-                }
-            }
-
-            &:nth-child(2) {
-                font-size: 25px;
-                margin: 0;
-                text-align: right;
-
-                @media (max-width: $xs) {
-                    text-align: center;
-                    width: 100%
-                }
+            @media (max-width: $xs) {
+                display: none;
             }
         }
-    }
 
-    .header-call-button {
+        .header-call-button {
+            font-size: 25px;
+            margin: 0;
+            text-align: right;
 
-        div {
-            border: 3px solid $maroon;
-            border-radius: 12px;
-            color: $light;
-            display: inline-block;
-            padding: 8px;
+            @media (max-width: $xs) {
+                text-align: center;
+                width: 100%
+            }
 
-            &:hover {
-                background-color: $maroon;
-                color: $dark;
+            a {
+
+                div {
+                    border: 3px solid $maroon;
+                    border-radius: 12px;
+                    color: $light;
+                    display: inline-block;
+                    padding: 8px;
+
+                    &:hover {
+                        background-color: $maroon;
+                        color: $dark;
+                    }
+                }
             }
         }
     }

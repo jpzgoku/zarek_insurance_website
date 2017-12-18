@@ -30,28 +30,28 @@ header {
   padding: 4px 32px; }
   header div {
     margin: 8px 0; }
-    header div div:first-child {
+    header div .header-menu {
       margin: auto; }
       @media (max-width: 575px) {
-        header div div:first-child {
+        header div .header-menu {
           display: none; } }
-    header div div:nth-child(2) {
+    header div .header-call-button {
       font-size: 25px;
       margin: 0;
       text-align: right; }
       @media (max-width: 575px) {
-        header div div:nth-child(2) {
+        header div .header-call-button {
           text-align: center;
           width: 100%; } }
-  header .header-call-button div {
-    border: 3px solid #b05;
-    border-radius: 12px;
-    color: #fff;
-    display: inline-block;
-    padding: 8px; }
-    header .header-call-button div:hover {
-      background-color: #b05;
-      color: #1f1f1f; }
+      header div .header-call-button a div {
+        border: 3px solid #b05;
+        border-radius: 12px;
+        color: #fff;
+        display: inline-block;
+        padding: 8px; }
+        header div .header-call-button a div:hover {
+          background-color: #b05;
+          color: #1f1f1f; }
   header ul {
     list-style-type: none; }
     header ul li {
