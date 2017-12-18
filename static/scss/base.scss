@@ -1,7 +1,6 @@
 @import 'variables';
 
 
-
 body {
     margin: 0;
     padding: 0;
@@ -26,6 +25,17 @@ iframe {
     width: 100%
 }
 
+.call-button {
+    margin: 0 0 8px 0;
+
+    a {
+        border: 3px solid $lightSilver;
+        border-radius: 12px;
+        margin: 0 0 0 -8px;
+        padding: 8px;
+    }
+}
+
 header {
     background-color: $dark;
     color: $light;
@@ -46,12 +56,29 @@ header {
 
             &:nth-child(2) {
                 font-size: 25px;
+                margin: 0;
                 text-align: right;
 
                 @media (max-width: $xs) {
                     text-align: center;
                     width: 100%
                 }
+            }
+        }
+    }
+
+    .header-call-button {
+
+        div {
+            border: 3px solid $maroon;
+            border-radius: 12px;
+            color: $light;
+            display: inline-block;
+            padding: 8px;
+
+            &:hover {
+                background-color: $maroon;
+                color: $dark;
             }
         }
     }
@@ -68,17 +95,11 @@ header {
 
 footer {
     background-color: $dark;
-    color: $silver;
+    color: $light;
     padding: 60px 20px;
 
     .footer-menu {
-        margin: 0 auto;
-        width: 50%;
-
-        @media (max-width: $sm) {
-            text-align: center;
-            width: 100%;
-        }
+        margin: 0 0 0 40px;
     }
 
     ul {
@@ -89,6 +110,14 @@ footer {
         li {
             margin: 8px 0;
             padding: 8px 0;
+
+            &.call-button {
+
+                a:hover {
+                    background-color: $light;
+                    color: $dark;
+                }
+            }
         }
     }
 }

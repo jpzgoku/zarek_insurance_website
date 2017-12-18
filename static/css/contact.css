@@ -30,5 +30,10 @@
     margin: 16px 0; }
     .contact-info ul li {
       padding: 4px 0; }
+  .contact-info a {
+    color: #1f1f1f; }
+    .contact-info a:hover {
+      background-color: #1f1f1f;
+      color: #fff; }
 
 /*# sourceMappingURL=contact.css.map */

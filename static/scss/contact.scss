@@ -40,4 +40,13 @@
             padding: 4px 0;
         }
     }
+
+    a {
+        color: $dark;
+
+        &:hover {
+            background-color: $dark;
+            color: $light;
+        }
+    }
 }

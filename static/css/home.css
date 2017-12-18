@@ -50,6 +50,7 @@
   margin: 40px 0 24px; }
   .carriers h3 {
     font-size: 32px;
+    margin: 80px;
     text-align: center; }
     @media (max-width: 767px) {
       .carriers h3 {
@@ -68,5 +69,15 @@
       @media (max-width: 767px) {
         .carriers .marquee img {
           max-height: 50px; } }
+      .carriers .marquee img.emc {
+        max-height: 60px; }
+        @media (max-width: 767px) {
+          .carriers .marquee img.emc {
+            max-height: 40px; } }
+      .carriers .marquee img.progressive {
+        max-height: 35px; }
+        @media (max-width: 767px) {
+          .carriers .marquee img.progressive {
+            max-height: 20px; } }
 
 /*# sourceMappingURL=home.css.map */

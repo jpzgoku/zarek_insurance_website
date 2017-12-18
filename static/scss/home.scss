@@ -32,7 +32,7 @@
 }
 
 .insurance-rates {
-    background-color: $silver;
+    background-color: $lightSilver;
     padding: 60px 0;
 
     h3 {
@@ -79,6 +79,7 @@
 
     h3 {
         font-size: 32px;
+        margin: 80px;
         text-align: center;
 
         @media (max-width: $sm) {
@@ -103,53 +104,22 @@
             @media (max-width: $sm) {
                 max-height: 50px;
             }
+
+            &.emc {
+                max-height: 60px;
+
+                @media (max-width: $sm) {
+                    max-height: 40px;
+                }
+            }
+
+            &.progressive {
+                max-height: 35px;
+
+                @media (max-width: $sm) {
+                    max-height: 20px;
+                }
+            }
         }
     }
 }
-
-
-//
-// .carriers {
-//     text-align: center;
-//
-//     ul {
-//         list-style-type: none;
-//
-//         li {
-//             display: inline-block;
-//             padding: 4px 12px;
-//
-//             img {
-//                 max-height: 50px;
-//
-//                 &.erie {
-//                     max-height: 117px;
-//                 }
-//
-//                 &.west-bend {
-//                     max-height: 100px;
-//                 }
-//
-//                 &.emc {
-//                     max-height: 82px;
-//                 }
-//
-//                 &.auto-owners {
-//                     max-height: 38px;
-//                     vertical-align: super;
-//                 }
-//
-//                 &.imt {
-//                     max-height: 60px;
-//                 }
-//
-//                 &.progressive {
-//                     max-height: 29px;
-//                     vertical-align: super;
-//                 }
-//             }
-//
-//         }
-//
-//     }
-// }
