@@ -51,7 +51,8 @@ header {
         padding: 8px; }
         header div .header-call-button a div:hover {
           background-color: #b05;
-          color: #1f1f1f; }
+          color: #1f1f1f;
+          cursor: pointer; }
   header ul {
     list-style-type: none; }
     header ul li {
