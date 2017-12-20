@@ -110,26 +110,26 @@
 
     div {
 
-        @mixin foo($url) {
+        @mixin backgroundImg($url) {
             background: no-repeat url($url) 50% 50%;
             background-size: cover;
             height: 400px;
         }
 
         &.car-insurance {
-            @include foo('../images/car_insurance.jpg');
+            @include backgroundImg('../images/car_insurance.jpg');
         }
 
         &.home-insurance {
-            @include foo('../images/home_insurance.jpg');
+            @include backgroundImg('../images/home_insurance.jpg');
         }
 
         &.business-insurance {
-            @include foo('../images/business_insurance.jpg');
+            @include backgroundImg('../images/business_insurance.jpg');
         }
 
         &.life-insurance {
-            @include foo('../images/life_insurance.jpg');
+            @include backgroundImg('../images/life_insurance.jpg');
         }
 
         p {
