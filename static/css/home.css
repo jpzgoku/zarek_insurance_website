@@ -1,50 +1,29 @@
 .logo {
-  margin: 60px auto;
-  max-width: 960px;
-  text-align: center; }
-  @media (max-width: 575px) {
+  background: #e3e3e3;
+  padding: 60px 0; }
+  @media (max-width: 567px) {
     .logo {
-      margin: 16px auto; } }
+      padding: 16px 0; } }
+  .logo div {
+    margin: 0 auto;
+    max-width: 960px;
+    text-align: center; }
   .logo img {
-    margin: auto;
+    margin: 0 auto;
     max-width: 100%;
     max-height: 90%; }
-    @media (max-width: 575px) {
+    @media (max-width: 567px) {
       .logo img {
         max-width: 100%; } }
   .logo h1 {
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 58px;
+    line-height: 125px;
     margin: 70px 0;
     text-align: center; }
-    @media (max-width: 575px) {
+    @media (max-width: 567px) {
       .logo h1 {
-        font-size: 32px; } }
-
-.insurance-rates {
-  background-color: #e3e3e3;
-  padding: 60px 0; }
-  .insurance-rates h3 {
-    font-size: 24px;
-    line-height: 40px;
-    margin: 40px 40px 60px;
-    text-transform: uppercase;
-    text-align: center; }
-  @media (max-width: 575px) {
-    .insurance-rates div {
-      text-align: center; } }
-  .insurance-rates .store-img {
-    text-align: right; }
-    @media (max-width: 575px) {
-      .insurance-rates .store-img {
-        text-align: center; } }
-    .insurance-rates .store-img img {
-      margin: 0 40px; }
-      @media (max-width: 575px) {
-        .insurance-rates .store-img img {
-          margin: 16px auto; } }
-  .insurance-rates li {
-    padding: 4px 0; }
+        font-size: 32px;
+        line-height: 60px; } }
 
 .carriers {
   margin: 40px 0 24px; }
@@ -79,5 +58,49 @@
         @media (max-width: 767px) {
           .carriers .marquee img.progressive {
             max-height: 20px; } }
+
+.insurance-rates {
+  background-color: #e3e3e3;
+  text-align: center;
+  padding: 100px 0; }
+  @media (max-width: 767px) {
+    .insurance-rates {
+      padding: 60px 0; } }
+  .insurance-rates h3 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 40px 40px 100px;
+    text-transform: uppercase; }
+    @media (max-width: 767px) {
+      .insurance-rates h3 {
+        font-size: 24px;
+        margin: 40px 40px 60px; } }
+  .insurance-rates div.car-insurance {
+    background: no-repeat url("../images/car_insurance.jpg") 50% 50%;
+    background-size: cover;
+    height: 400px; }
+  .insurance-rates div.home-insurance {
+    background: no-repeat url("../images/home_insurance.jpg") 50% 50%;
+    background-size: cover;
+    height: 400px; }
+  .insurance-rates div.business-insurance {
+    background: no-repeat url("../images/business_insurance.jpg") 50% 50%;
+    background-size: cover;
+    height: 400px; }
+  .insurance-rates div.life-insurance {
+    background: no-repeat url("../images/life_insurance.jpg") 50% 50%;
+    background-size: cover;
+    height: 400px; }
+  .insurance-rates div p {
+    color: #fff;
+    font-size: 56px; }
+  .insurance-rates h4 {
+    font-size: 24px;
+    margin: 40px 0 0;
+    text-transform: uppercase; }
+  .insurance-rates li {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 4px; }
 
 /*# sourceMappingURL=home.css.map */

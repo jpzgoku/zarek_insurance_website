@@ -1,16 +1,21 @@
 @import 'variables';
 
 .logo {
-    margin: 60px auto;
-    max-width: 960px;
-    text-align: center;
+    background: $lightSilver;
+    padding: 60px 0;
 
     @media (max-width: $xs) {
-        margin: 16px auto;
+        padding: 16px 0;
+    }
+
+    div {
+        margin: 0 auto;
+        max-width: 960px;
+        text-align: center;
     }
 
     img {
-        margin: auto;
+        margin: 0 auto;
         max-width: 100%;
         max-height: 90%;
 
@@ -20,56 +25,15 @@
     }
 
     h1 {
-        font-size: 40px;
-        line-height: 60px;
+        font-size: 58px;
+        line-height: 125px;
         margin: 70px 0;
         text-align: center;
 
         @media (max-width: $xs) {
             font-size: 32px;
+            line-height: 60px;
         }
-    }
-}
-
-.insurance-rates {
-    background-color: $lightSilver;
-    padding: 60px 0;
-
-    h3 {
-        font-size: 24px;
-        line-height: 40px;
-        margin: 40px 40px 60px;
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    div {
-
-        @media (max-width: $xs) {
-            text-align: center;
-        }
-    }
-
-    .store-img {
-        text-align: right;
-
-        @media (max-width: $xs) {
-            text-align: center;
-        }
-
-        img {
-            margin: 0 40px;
-
-            @media (max-width: $xs) {
-                margin: 16px auto;
-            }
-        }
-    }
-
-
-
-    li {
-        padding: 4px 0;
     }
 }
 
@@ -121,5 +85,69 @@
                 }
             }
         }
+    }
+}
+
+.insurance-rates {
+    background-color: $lightSilver;
+    text-align: center;
+    padding: 100px 0;
+
+    @media (max-width: $sm) {
+        padding: 60px 0;
+    }
+
+    h3 {
+        font-size: 32px;
+        line-height: 40px;
+        margin: 40px 40px 100px;
+        text-transform: uppercase;
+
+        @media (max-width: $sm) {
+            font-size: 24px;
+            margin: 40px 40px 60px;
+        }
+    }
+
+    div {
+
+        @mixin foo($url) {
+            background: no-repeat url($url) 50% 50%;
+            background-size: cover;
+            height: 400px;
+        }
+
+        &.car-insurance {
+            @include foo('../images/car_insurance.jpg');
+        }
+
+        &.home-insurance {
+            @include foo('../images/home_insurance.jpg');
+        }
+
+        &.business-insurance {
+            @include foo('../images/business_insurance.jpg');
+        }
+
+        &.life-insurance {
+            @include foo('../images/life_insurance.jpg');
+        }
+
+        p {
+            color: $light;
+            font-size: 56px;
+        }
+    }
+
+    h4 {
+        font-size: 24px;
+        margin: 40px 0 0;
+        text-transform: uppercase;
+    }
+
+    li {
+        font-size: 24px;
+        font-weight: 600;
+        padding: 4px;
     }
 }

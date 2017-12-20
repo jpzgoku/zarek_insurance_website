@@ -1,4 +1,13 @@
 .about-us {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 60px; }
+  .about-us h2 {
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center; }
+  .about-us p {
+    font-size: 20px;
+    line-height: 30px; }
 
 /*# sourceMappingURL=about_us.css.map */
