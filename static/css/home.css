@@ -69,8 +69,7 @@
   .insurance-rates h3 {
     font-size: 32px;
     line-height: 40px;
-    margin: 40px 40px 100px;
-    text-transform: uppercase; }
+    margin: 40px 40px 100px; }
     @media (max-width: 767px) {
       .insurance-rates h3 {
         font-size: 24px;
@@ -96,8 +95,7 @@
     font-size: 56px; }
   .insurance-rates h4 {
     font-size: 24px;
-    margin: 40px 0 0;
-    text-transform: uppercase; }
+    margin: 40px 0 0; }
   .insurance-rates li {
     font-size: 24px;
     font-weight: 600;
