@@ -25,6 +25,13 @@ iframe {
     width: 100%
 }
 
+.header-footer-logo {
+    max-height: 80px;
+    position: absolute;
+    right: 47%;
+    top: 63px;
+}
+
 .call-button {
     margin: 0 0 8px 0;
 
@@ -150,6 +157,15 @@ footer {
     background-color: $dark;
     color: $light;
     padding: 60px 20px;
+    position: relative;
+
+    img.header-footer-logo {
+        top: -40px;
+
+        @media (max-width: $xs) {
+            right: 41%;
+        }
+    }
 
     .footer-menu {
         margin: 0 0 0 40px;

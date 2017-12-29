@@ -16,6 +16,12 @@ a {
 iframe {
   width: 100%; }
 
+.header-footer-logo {
+  max-height: 80px;
+  position: absolute;
+  right: 47%;
+  top: 63px; }
+
 .call-button {
   margin: 0 0 8px 0; }
   .call-button a {
@@ -98,7 +104,13 @@ header {
 footer {
   background-color: #1f1f1f;
   color: #fff;
-  padding: 60px 20px; }
+  padding: 60px 20px;
+  position: relative; }
+  footer img.header-footer-logo {
+    top: -40px; }
+    @media (max-width: 567px) {
+      footer img.header-footer-logo {
+        right: 41%; } }
   footer .footer-menu {
     margin: 0 0 0 40px; }
   footer ul {
