@@ -16,11 +16,16 @@ a {
 iframe {
   width: 100%; }
 
-.header-footer-logo {
+.header-logo,
+.footer-logo {
   max-height: 80px;
   position: absolute;
   right: 47%;
   top: 63px; }
+
+@media (max-width: 767px) {
+  .header-logo {
+    display: none; } }
 
 .call-button {
   margin: 0 0 8px 0; }
@@ -106,10 +111,12 @@ footer {
   color: #fff;
   padding: 60px 20px;
   position: relative; }
-  footer img.header-footer-logo {
+  footer img.header-logo,
+  footer img.footer-logo {
     top: -40px; }
     @media (max-width: 567px) {
-      footer img.header-footer-logo {
+      footer img.header-logo,
+      footer img.footer-logo {
         right: 41%; } }
   footer .footer-menu {
     margin: 0 0 0 40px; }

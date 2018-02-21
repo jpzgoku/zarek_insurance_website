@@ -25,11 +25,19 @@ iframe {
     width: 100%
 }
 
-.header-footer-logo {
+.header-logo,
+.footer-logo {
     max-height: 80px;
     position: absolute;
     right: 47%;
     top: 63px;
+}
+
+.header-logo {
+
+    @media (max-width: $sm) {
+        display: none;
+    }
 }
 
 .call-button {
@@ -159,7 +167,8 @@ footer {
     padding: 60px 20px;
     position: relative;
 
-    img.header-footer-logo {
+    img.header-logo,
+    img.footer-logo {
         top: -40px;
 
         @media (max-width: $xs) {
